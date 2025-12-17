@@ -1,0 +1,33 @@
+when we type . inside the sir page or our page in githhub we can access into vss code temporarily.
+structure of a web browser
+delegate-vela solradhu like manager
+user interface-browser engine(manager)-rendering engine-render tree-b8- ui backend-data storage
+cookies is used for storage
+cache-copy the ip address 
+unary operator and binary oerator
+unary only one operand
+binary has two operands
+modulus gives the remainder
+ tyepe conversion and coersion-implicit and explicit
+parseint and parsefloat is explicit coersion
+null and undefined are bottom values
+null is we are assign the null but undefined is js assigns
+avoid null
+holds the ctrl and then click any value it goes to the assigned value
+eg
+var p;
+console.log(p);
+then click ctrl+click it goes to the p
+undefined is a value is and not defined is an error.
+
+undefined is we declared but we didnt assign a value
+but nodefined is we didi
+== allows coercion -it converts the datatype and it checks whether it is equal and it results
+=== doesnt allow coercion it directly checks the value and displays results
+""==0 here coercion converts ""into numbers and then check 0==0 with the help of parseint and the final results true
+conditional statements
+template literal
+${}-interpolation or substitue we can use it in backtik symbol(` `)
+expression can be assigned to a variable
+area of circle=2pir
+

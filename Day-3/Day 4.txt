@@ -1,0 +1,31 @@
+
+if expects boolean values
+while using  if  we can got to comparison operator and logical operator
+a= true || false
+if(5>4)
+a=5>4
+math.abs is inbuilt in js---->abs means absolute value.
+maths.ceil means if we give 4.1 means it roundoff to the highest value that is 5.
+math.floor means if we give 4.5 means it roundoff to the lowest value that is 4
+math.round means if we give 4.89 means it roundoff to the nearest value that is 5
+other method to get nearest decimal point search it in mdn
+the datatype of infinity is a number.
+trim remove the unwanted spaces at the starting and ending.
+trim start removes the starting unwanted spaces at the starts
+trim end reoves the unwanted spaces at the end
+strings are immutable(cannot be change).
+dot chaining---->  .trim().uppercase().tolowercase()  it works on the same data type like string
+.length- to check how many words are there. it gives the output is numbers
+when the dot chain cut is when the datatype is changed.
+assignment----->other ways to cut the dot chain refer it in google.
+console.log("hi".repeat(10));
+the output repeats hi in 10 time
+.padStart(10);---->whether the output is 90 means it lefts 8 spaces and then print 90 that is the total is 10
+linkedin.com/in/robinr1012-->this is my linkedin
+non primitie data typess---- array- reference data types
+arrays are mutable
+objects are keys and values
+for space we need not access the dot notation we access it only on the bracket notation
+notes.ragavkumarv.com---->for notes
+
+
