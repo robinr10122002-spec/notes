@@ -306,3 +306,4 @@ console.log(7 != 8 && 4 >= 3 && 3 != 9 && !(4 > 1));)
     - ### OBJECT contains keys and values.
       - > FOR NOTES REFER : notes.ragavkumarv.com
       - And we had done some coding in arrays ,strings ,and objects .
+  - dry principle-dont repeat 

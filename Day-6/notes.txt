@@ -1,0 +1,36 @@
+use google slides for presentation
+codecarbon.now.sh
+
+
+
+
+FIRST THREE MEMBERS- ROBIN,YOGI AND NANDHA KUMAR
+SECOND THREE MEMBERS- SUSHENDRA PANDIYAN,DHACHNAMOORTHY AND SURYA
+THIRD THREE MEMBERS- JACOB,PREETHI AND RAGUL
+FOURTH THREE MEMBERS-VIKAS,DHANAPAL,HARIRAM
+FIFTHE THREE MEMBERS-AHMED,RISHI AND PUSHPENDRA
+SIXTH THREE MEMBER-THARACHAND,MOHAN\
+
+telling our story is said to be anactode.
+
+
+how do we manage the order of key in a certain way we need to find it
+
+type of undefined is undefined and the type of null is object     it is a bug un javascript
+
+conversion cannot string into number and the conversion fails means it results Nan(Not a number)
+ex :'a'/2----here the string a is not to be converted into a number then it results Nan.
+var x=undefined;
+x *10;
+results the Nan.
+the data type of Nan is number
+the only value of Nan is not equal to Nan
+---(Nan==Nan) results false.
+how to check a value is Nan or not compare 4 ways check it 
+bodmass
+numeric separator -improves readbility.
+
+hexadecimal can be separated by using numeric separator.
+decimal-1 to 9
+decimal point is 0.1 to 1.99999
+

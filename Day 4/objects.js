@@ -9,15 +9,15 @@
 // console.log(petProfile);
 
 
-// var petProfile={
-//   names:"barbarian",
-//   age:10,
-//   height: 50,
-//   color:"black"
-// };
-// console.log(petProfile);
-//  petProfile.age=petProfile.age+1;
-//  console.log(petProfile.age);
+var petProfile={
+  names:"barbarian",
+  age:10,
+  height: 50,
+  color:"black"
+};
+console.log(petProfile);
+ petProfile.age=petProfile.age+1;
+ console.log(petProfile.age);
 
 var getProfile={
   names:"robin",

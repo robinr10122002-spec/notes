@@ -21,24 +21,24 @@
 //   console.log("We ran out of stock");
 // }
 
-// var stock1 = "vannila";              task 2
-// var stock2 = "chocolate";
-// var stock3 = "butterscoth";
-// var stock4 = "cotton candy";
-// var icecream = prompt("Please enter your fav icecream");
-// console.log(icecream.trim().toLowerCase());
-// var modifiedIcecream = icecream.trim().toLowerCase();
-// console.log(modifiedIcecream);
-// if (modifiedIcecream == stock1) {
-//   console.log("yes, we have vannila in stock");
-// } else if (modifiedIcecream == stock2) {
-//   console.log("yes, we have chocolate in stock");
-// } else if (modifiedIcecream == stock3) {
-//   console.log("yes, we have butterscotch in stock");
-// } else if (modifiedIcecream == stock4) {
-//   console.log("yes, we have cotton candy in stock");
-// } else {
-//   console.log("We ran out of stock");
+var stock1 = "vannila";              task 2
+var stock2 = "chocolate";
+var stock3 = "butterscoth";
+var stock4 = "cotton candy";
+var icecream = prompt("Please enter your fav icecream");
+console.log(icecream.trim().toLowerCase());
+var modifiedIcecream = icecream.trim().toLowerCase();
+console.log(modifiedIcecream);
+if (modifiedIcecream == stock1) {
+  console.log("yes, we have vannila in stock");
+} else if (modifiedIcecream == stock2) {
+  console.log("yes, we have chocolate in stock");
+} else if (modifiedIcecream == stock3) {
+  console.log("yes, we have butterscotch in stock");
+} else if (modifiedIcecream == stock4) {
+  console.log("yes, we have cotton candy in stock");
+} else {
+  console.log("We ran out of stock");
 // }
 
 // var stock1 = "vannila";

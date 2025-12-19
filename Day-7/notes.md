@@ -1,0 +1,4 @@
+- var t=NaN
+- Console.log(t==t)---false
+- because the only value that not equals to itself is NaN.
+- holes means it skips the value.
