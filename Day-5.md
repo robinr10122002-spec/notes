@@ -24,3 +24,13 @@ dot chain method----for example-.trim().goToLowerCase-----this results the input
 - ### Rest operator--collect rest of the values of arrays or objects
 
 -        equal to left is rest and equal to right is spread    ------left(rest)=right(spread)
+
+ - ## day-8
+- important terms in functions
+  no of arg is less than the no of params then the params became undefined
+  no of arg is more than the no of params then the arg is skipped
+ -  ### use of function
+   - reuse the logic
+   -  update in one place
+-  ### Philosophy 
+       - make it work and then make it better

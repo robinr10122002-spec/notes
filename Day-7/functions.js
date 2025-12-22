@@ -6,7 +6,7 @@
 
 // console.log(moodReport("😎", "afternoon ☀️"));
 
-// function moodReport(emojie1="😊",timeOfTheDay="evening"){                   task 1
+// function moodReport(emojie1="😊",timeOfTheDay="evening"){                  
 //     const climateToday=`Feelings${emojie1},this is ${timeOfTheDay}`
 //     return climateToday;
 // }

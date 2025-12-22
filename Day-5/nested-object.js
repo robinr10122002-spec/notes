@@ -21,21 +21,21 @@
 // }
 // console.log(bookDetails);
 
-const details1 = {
-  authorAge: 55,
-  year: 2002,
-  price: 1200,
-};
-const book1 = {
-  names: "Harry Potter II: Chamber of Secrets",
-  author: "J.K Rowling",
-  authorAge: 45,
-};
-const bookDetails = {
-  ...book1,
-  ...details1,
-};
-console.log(bookDetails);
+// const details1 = {
+//   authorAge: 55,
+//   year: 2002,
+//   price: 1200,
+// };
+// const book1 = {
+//   names: "Harry Potter II: Chamber of Secrets",
+//   author: "J.K Rowling",
+//   authorAge: 45,
+// };
+// const bookDetails = {
+//   ...book1,
+//   ...details1,
+// };
+// console.log(bookDetails);
 
 // const marks=[10,20,30,40]
 // const [m1,m2,...extras]=marks                 ------rest method
@@ -48,8 +48,8 @@ console.log(bookDetails);
 // console.log(y3);
 
 // const y1=[100,200];
-// const y2=[300,400];
-// const y3=[...y1,...y2]
+// const y2=[200,400];
+// const y3=[...y2,...y1]
 // console.log(y3);
 
 // const marks=[100,200,300,400,500];

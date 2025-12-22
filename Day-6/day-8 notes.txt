@@ -1,0 +1,9 @@
+types of functions;(datatype of function is functuon)
+1.function declaration
+2.function expression
+3.arrow function----no function key is required  ---   (this keyword search it in google)
+if function body contain one line means we dont need return statement
+4.IIFE(Later assignment)
+people who dont know the name is said to be anonymous function
+5.anonymous function
+pay it forward-balan edhir paakamal help pannuvadhu

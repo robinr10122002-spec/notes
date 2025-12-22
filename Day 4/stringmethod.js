@@ -21,7 +21,8 @@
 //   console.log("We ran out of stock");
 // }
 
-var stock1 = "vannila";              task 2
+//              task 2
+var stock1 = "vannila"; 
 var stock2 = "chocolate";
 var stock3 = "butterscoth";
 var stock4 = "cotton candy";
@@ -39,7 +40,7 @@ if (modifiedIcecream == stock1) {
   console.log("yes, we have cotton candy in stock");
 } else {
   console.log("We ran out of stock");
-// }
+ }
 
 // var stock1 = "vannila";
 // var stock2 = "chocolate";
