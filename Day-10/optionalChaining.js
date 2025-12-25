@@ -50,11 +50,19 @@ const csk4 = null;
 //   return csk.stats.win;
 // }
 
+// function getWinStat(csk) {
+//   if (!csk || !csk.stats || !csk.stats.win) {        // (using ||operator)
+//     return "Data not found";
+//   }
+//   return csk.stats.win;
+// }
+
 function getWinStat(csk) {
-  if (!csk || !csk.stats || !csk.stats.win) {
-    return "Data not found";
+  if (csk && csk.stats && csk.stats.win) {
+    // (using && operator)
+    return csk.stats.win;
   }
-  return csk.stats.win;
+  return `Data not found`;
 }
 console.log(getWinStat(csk1)); // 5
 console.log(getWinStat(csk2)); // 'Data not found'
