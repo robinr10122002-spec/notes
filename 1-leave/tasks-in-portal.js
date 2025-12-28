@@ -165,6 +165,7 @@
 // console.log(getUserSettings(userWithoutSettings));
 
 // task 20 in playlist 9
+
 // const userWithFullProfile = {
 //   id: 1,
 //   name: "Alice",
@@ -194,5 +195,94 @@
 // console.log(getUserAge(userWithFullProfile));
 // console.log(getUserAge(userWithPartialProfile));
 // console.log(getUserAge({ id: 3, name: "Charlie" }));
+
+// const books = [
+//   { title: "Infinite Jest", rating: 4.5, genre: "Fiction" },
+//   { title: "The Catcher in the Rye", rating: 3.9, genre: "Fiction" },
+//   { title: "Sapiens", rating: 4.9, genre: "History" },
+//   { title: "A Brief History of Time", rating: 4.8, genre: "Science" },
+//   { title: "Clean Code", rating: 4.7, genre: "Technology" },
+// ];
+
+// // Your code
+// // console.log(books.map((book) => book.title));
+// const fictionGenre = books.filter((book) => book.genre == "Fiction");
+// console.log(fictionGenre);
+
+// getHighestRatedBooks(books, 4.7); // Highest rated books are: Sapiens, A Brief History of Time and Clean Code
+// getHighestRatedBooks(books, 6); // The are no good books available 😔
+// getHighestRatedBooks(books, 4.9); // Highest rated books is Sapiens
+
+
+// // // Add a new skill to each employee
+//12th program in portal
+// const movies = [
+//   {
+//     id: 1,
+//     title: "Baahubali",
+//     director: "S. S. Rajamouli",
+//     year: 2015,
+//     ratings: [8, 9, 10],
+//     genre: "Action",
+//   },
+//   {
+//     id: 2,
+//     title: "Arjun Reddy",
+//     director: "Sandeep Reddy Vanga",
+//     year: 2017,
+//     ratings: [9, 8, 9],
+//     genre: "Drama",
+//   },
+//   {
+//     id: 3,
+//     title: "Mahanati",
+//     director: "Nag Ashwin",
+//     year: 2018,
+//     ratings: [10, 9, 8],
+//     genre: "Biography",
+//   },
+// ];
+
+// // Write a function that formats movie titles with their ratings
+// const getTitlesAndRatings = (movies) => {
+//   // Your code here
+//   const moviesTitle = movies.map((movie) => `${movie.title}: ${movie.ratings.join(", ")} `);
+//   return moviesTitle.join("| ");
+// };
+
+// console.log(getTitlesAndRatings(movies));
+// ............................................................adding problem solving
+
+// const employees = [
+//   {
+//     id: 1,
+//     name: "Alice",
+//     position: "Developer",
+//     skills: ["JavaScript", "React"],
+//   },
+//   {
+//     id: 2,
+//     name: "Bob",
+//     position: "Manager",
+//     skills: ["Leadership", "Communication"],
+//   },
+//   {
+//     id: 3,
+//     name: "Charlie",
+//     position: "CEO",
+//     skills: ["Strategy", "Vision"],
+//   },
+// ];
+
+// // Write a function that adds a new skill to each employee
+// const addSkill = (employees, newSkill) => {
+//   // Your code here
+//   const totalSkills=employees.map((employees)=>employees, newSkill)
+//   return totalSkills
+// };
+
+// console.log(JSON.stringify(addSkill(employees, "Problem Solving"), null, 2));
+
+
 
 
