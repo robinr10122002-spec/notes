@@ -29,10 +29,21 @@
  // console.log(total,typeof total,typeof arr)       // output-- number
  // console.log(typeof arr)                          // output-- object
 
-                //array.every--
+                //array.every--immutable
                 // all elements are same means the condition becomes true or false
 // const arr=[1,1,1,1,2]
 // const result=arr.every(arr=>arr==1)                   //  output--false
 // console.log(result,typeof result)                     // ouput--boolean
 
-       
+
+                //array.fill--immutable
+// const arr=[1,2,3,4,5]
+// const newArr=arr.fill(8)                                  // ouput--[8,8,8,8,8]
+// console.log(newArr)                                       // output--object
+// console.log(typeof newArr)
+
+               //arry.toReversed--immutable
+    //    const arr=[1,2,3,4,5]
+    //    const reverseArr=arr.toReversed(arr)                   // output--[5,4,3,2,1]
+    //    console.log(reverseArr,typeof reverseArr)              // output--[1,2,3,4,5]
+    //    console.log(arr,typeof arr)
