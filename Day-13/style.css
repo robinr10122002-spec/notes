@@ -1,0 +1,30 @@
+p {
+  color: rgba(221, 72, 72, 0.758);
+  font-family: "Qwigley", cursive;
+  font-size: 32px;
+}
+h1 {
+  font-family: serif;
+  color: black;
+  letter-spacing: 4px;
+  border: 10px solid gray;
+  border-left: 4px solid crimson;
+ border-style:50px groove;
+}
+h2 {
+  font-family: "Italianno", cursive;
+  color: rgb(128, 0, 94);
+  letter-spacing: 4px;
+  border:6px solid rgb(199, 23, 120);
+  border-radius: 40px;
+  font-size: 100px;
+}
+
+img{
+    border: 4px solid burlywood;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 200px;
+    aspect-ratio: 1/1;
+    object-position: center;
+}

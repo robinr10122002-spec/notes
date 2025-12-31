@@ -1,0 +1,17 @@
+h4 {
+  font-family: sans-serif;
+}
+div {
+  background-color: oklch(76.463% 0.15148 229.462);
+  /* border: 6px solid oklch(94.09% 0.0426 218.977); */
+  border-left: 10px solid blue;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 100px 200px;
+  font-family: sans-serif;
+  width:532px;
+  padding-right: 10px;
+  
+}
