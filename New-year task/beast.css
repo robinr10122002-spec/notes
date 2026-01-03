@@ -1,7 +1,6 @@
 body {
-  background-color: oklch(15.365% 0.05827 27.618);
-}
-h1 {
+  background-image: linear-gradient(4deg, #051937, #3d215a, #830b65, #c30050, #eb121c);}
+h2 {
   text-align: center;
   font-family: sans-serif;
   color: oklch(100% 0.00011 271.152);

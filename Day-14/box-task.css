@@ -1,0 +1,25 @@
+:root{
+    font-size: 16px;
+    --primary-color: oklch(76.463% 0.15148 229.462);
+    --secondary-color:blue;
+    --padding:1rem;
+    --border-radius:10px;
+    --border-left:10px;
+    --margin-left-right:16px;
+
+}
+
+div {
+  background-color:var(--primary-color);
+  /* border: 6px solid oklch(94.09% 0.0426 218.977); */
+  border-left: 1rem solid var(--secondary-color);
+  border-radius: 2rem;
+  padding : calc(o.5 * var(--padding));
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  margin: 1rem 2rem;
+  font-family: sans-serif;
+  width:34rem;
+  padding-right: 1rem;
+  
+}
