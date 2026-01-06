@@ -1,0 +1,30 @@
+p {
+  margin: 0%;
+  font-size: 2rem;
+  background-color: #134a42;
+  color: aliceblue;
+}
+body {
+    
+  margin: 0%;
+}
+section{
+    background: url(https://i.pinimg.com/736x/9f/da/7d/9fda7d99ec24f0f915d0fc0a6a343f7c.jpg),linear-gradient(52deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-blend-mode:red;
+    background:linear-gradient(to right top(red,green));
+    height: 40rem;
+    display: grid;
+    place-content: center;
+    background-repeat: no-repeat;
+   background-position: center;
+   color: oklch(78.239% 0.16375 73.324);
+   background-size: cover;
+   background-blend-mode:hard-light;
+   background-position-x: bottom;
+   
+}
+h2{
+    margin: 0%;
+    font-size: 3rem;
+    text-align: initial;
+}
