@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+    }
+     .lists-1,.lists-2,.lists-3,.lists-4{
+        text-decoration:none;
+        list-style: none;
+       color: black;
+       line-height: 2rem;
+       /* padding-right: 2rem; */
+       padding-left:0rem
+    }
+    .container-1,.container-2,.container-3,.container-4{
+      height: 24rem;
+    width: 18rem;
+    color: black;
+    line-height: 4rem;
+    background-color: oklch(0.76 0.18 103.04 / 0.63);
+    border-radius: 1rem;
+    padding-left: 1rem;
+    font-family: sans-serif;
+    
+  
+    }
+    button{
+        height: 2rem;
+        width: 16rem;
+        border-radius: 0.5rem;
+        border: 0;
+        color: blueviolet;
+        /* padding-bottom: 1rem;
+        border-bottom: 1rem; */
+    }
+ .lists-1>:nth-child(n+2),.lists-2>:nth-child(n+3){
+        color: rgba(109, 93, 93, 0.849);
+        
+    }
+    .first-heading,.second-heading,.third-heading,.fourth-heading{
+        border-top: 2px;
+        font-size: 1.7rem;
+        font-weight: bold;
+
+    }
+    span{
+        color: blue;
+        font-weight: 200;
+        font-size: 1.5rem;
+    }
+    .container-3 {
+        background-color: rgb(2, 13, 74);
+        color:white
+    }
+    .container-3>button{
+      color: #ffffffcf;
+       background-color: blue;
+       font-size:1.1rem;
+       font-weight: 600;
+    }
+    .container-3>span{
+        color: white;
+    }
+    .lists-3>:nth-child(n+5){
+        color: rgb(36, 62, 147);
+    }
+    .lists-3>:nth-child(-n+4){
+color:white;
+    }
+    .big-container{
+        width:700px;
+        aspect-ratio: 1/1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    .container-1>button{
+       margin-bottom: 1rem;
+    }
+    </style>
+</head>
+<body><div class="big-container">
+    <div class="container-1">
+        <h2 class="first-heading">Intro</h2>
+<ul class="lists-1">
+    <li>✔   Upload Video up to 720p Resolution</li>
+    <li>✔   Attachment & Post Scheduling</li>
+    <li>✔   Set your rates</li>
+    <li>✔   Exclusive Details</li>
+    <li>✔   Advanced Statistics</li>
+</ul>
+<h4>$<span>123</span> /month</h4>
+<button>Choose</button>
+    </div>
+
+<div class="container-2">
+        <h2 class="second-heading">Base</h2>
+<ul class="lists-2">
+    <li>✔   Upload Video with HD Resolution</li>
+    <li>✔   Attachment & Post Scheduling</li>
+    <li>✔   Set your rates</li>
+    <li>✔   Exclusive Details</li>
+    <li>✔   Advanced Statistics</li>
+</ul>
+<h4>$<span>234</span> /month</h4>
+<button>Choose</button></div>
+    
+
+
+<div class="container-3">
+        <h3 class="third-heading">Pro</h3>
+<ul class="lists-3">
+    <li>✔   Upload Video with HD Resolution</li>
+    <li>✔   Attachment & Post Scheduling</li>
+    <li>✔   Set your rates</li>
+    <li>✔   Exclusive Details</li>
+    <li>✔   Advanced Statistics</li>
+</ul>
+<h4>$<span>456</span> /month</h4>
+<button>Try 1 month</button></div>
+    
+
+
+<div class="container-4">
+        <h3 class="fourth-heading">Enterprise</h3>
+<ul class="lists-4">
+    <li>✔   Upload Video with 4K Resolution</li>
+    <li>✔   Attachment & Post Scheduling</li>
+    <li>✔   Set your rates</li>
+    <li>✔   Exclusive Details</li>
+    <li>✔   Advanced Statistics</li>
+</ul>
+<h4>$<span>678</span> /month</h4>
+<button>Choose</button></div> 
+</div>
+
+</body>
+</html> 
