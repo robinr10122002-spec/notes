@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Task 2.1 -->
+    <h2>Hobbies</h2>
+    <ul class="hobbies-container"></ul>
+
+    <script>
+      const hobbies = [
+        "📚 Reading",
+        "🎨 Painting",
+        "📸 Photography",
+        "🥾 Hiking",
+        "🌱 Gardening",
+        "👨‍🍳 Cooking",
+        "🎶 Playing musical instruments",
+        "💃 Dancing",
+        "✈️ Traveling",
+        "🧶 Knitting",
+      ];
+//  const para1 = document.createElement("p");
+//       para1.innerText = "Make hay while the sun shines";
+
+//       document.querySelector(".quote-container").append(para1);
+
+    const result=document.createElement("li");
+    result.innerHTML="Reading";
+    document.querySelector(".hobbies-container").append(result);
+    
+for(let hobby of hobbies){
+    const result1=document.createElement("li")
+    result1.innerHTML=hobby;
+    document.querySelector(".hobbies-container").append(result1)}
+
+
+for(let hobby of hobbies){
+    const result2=document.createElement('li');
+    result2.innerText=hobby;
+    document.querySelector(".hobbies-container").append(result2)
+}
+    </script>
+  </body>
+</html>

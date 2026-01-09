@@ -1,0 +1,12 @@
+- ## bento-grid :
+- grid-template-row:repeat(5,100px);
+- display:none-->displays nothing
+- visibility:hidden
+- grid-column:1/4;
+- grid-row:1/4;
+- grid-template:repeat(autofit,minmax(100px,1fr))--->(short form is RAM technique)
+- grid-auto-rows:150px(add the extra div or boxes that will comes at the next line in rows by default)
+- grid-auto-flow:row or column(it decides where we need to add the div or box(in rows or column))
+- grid-auto-column
+- ## responsive:
+- it means the user can also use the webpage in the all devices.

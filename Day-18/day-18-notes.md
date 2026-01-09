@@ -1,0 +1,49 @@
+- # -MEDIA QUERY:
+  - Syntax : - -->@media (width>300px){background-color:red}---it must be used in css. - this width is the devices width. - 300px is the mobiles width in the condition,
+  - ## pseudo-class-selectors:
+    - syntax--> ( .container >li:nth-child(1){color:red} ).
+    - here after the li if we give single colon(:)->means pseudo class selector
+    - if we give double colon(::)->means pseudo element selector .it is used to access the element.
+    - ex:(3n+4)means here 3 is the difference
+    - 4 is the starting position.
+    - n starts from 0 the position
+    - if(n+5)-->means starting position is 5.(starts from 5 and ends till the infinity)
+    - if(-n+5)-->means starting position is 5(starts from 5 and ends till the 0 or in reverse order)
+    - # Types of pseudo class selector:
+    - p-nth-of-child(2)-->means it prints the child of 2 nd element of p.
+    - p- last-of-child-->means it prints the last p element in the p.
+    - p-nth-of-type(2)-->means it prints the which type is it and p is the type then p of 2 nd element
+    - p- last-of-type-->means it prints the last type of p element in the p.
+    - first-child
+    - last-child
+    -
+- # -.box:hover{color:red,background:url}
+- anything we can do in the hover if we hover over a image or anything while we touch the element or image
+- .box:hover{transform:scale(1.2)} -->(1.2) it means when we hover over it it will transform into 1.2 ratio it will increases.
+- color will animate but bg color will not animate.
+- box{transition: 1s transform} or box{transition: 0.2s all} the hovered image will be scaled and it shows the difference in 0.2 seconds in general.
+-
+- # box:active{color:blue} and important thing is transition must be given to the element like example(.box{transition:is all ease in and out})
+- box:hover{transform:scale(1.5)translateY(-40px)translateX(40px) }
+- box:hover{transform:rotate, border-radius:50%, background:orange, background:url(), transform:rotate(360degree)}
+- ease starts speed and end is slow
+- ease starts slow and end is speed
+- ease-in-out starts slow and ends slow.
+- ## transform.mdn (refer it).
+- ## - Every browser has its own user agent.
+- ## Inherit:
+- in "a" tag it does not inherit because it is in the last specificity.
+- so we need to put-->>a{color:inherit}
+
+## DOM(Document Object Method):
+- doc(object)is to accesss the DOM.
+- html parser will convert html into dom.
+- example--><h1>Awesome<h1> in this one we need to access the html element in javascript so we are putting here
+- ## const result=document.querySelector()
+- 
+- ### document.querySelectorAll()--> 
+- it does three works like gettingElementById,gettingElementsByClassName and gettingElementByTagName.
+ 
+- ## uses of queryselector:
+- 1. NodeList-forEach.
+- 2. supports-complex combinator.
