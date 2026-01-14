@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const colors = ["crimson", "orange", "teal", "pink"];
+
+      // let i=0;
+      // setInterval(()=>{
+      //     if(i==colors.length){
+      // i=0;
+      //     }
+      // document.body.style.background=colors[i];
+      // i++;}
+      // ,1000)
+
+      let i = 0;
+      setInterval(() => {
+        // Restart when out of bounds
+        if (i == colors.length) {
+          i = 0;
+        }
+
+        document.body.style.background = colors[i];
+        i++;
+      }, 1000);
+    </script>
+  </body>
+</html>

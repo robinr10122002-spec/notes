@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0px;
+    }
+    .image-container{
+      background:url(./images/image-header-desktop.jpg),purple;
+      background-blend-mode: luminosity;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 17rem;
+      width: 27rem;
+      /* overflow: hidden; */
+    }
+    body{
+      margin: 0px;
+      display: grid;
+      place-content: center;
+      min-height: 100vh;
+     
+        background: rgb(8, 7, 8);
+    }
+    .highlighted-word{
+      color: blueviolet;
+    }
+    .main-container{
+      display: flex;
+      border-radius: 1rem;
+     background-color: rgb(7, 3, 69);
+      flex-shrink: 0;
+      max-width: 54rem;
+      overflow: hidden;
+      
+     
+    }
+    .content-container{
+      height: auto;
+      width: 50%;
+    padding: 2rem;
+      padding-left: 4rem;
+      display: grid;
+      grid-template:row;
+      
+    }
+    .stats-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+     
+      
+     
+    }
+    .stats-container p{
+      font-size: 0.7rem;
+      color: rgb(148, 148, 144);
+    }
+    h2{
+      color: white;
+    }
+    .first-para{
+      color: rgb(148, 148, 144);
+      /* line-height: 1px; */
+    }
+    h4{
+      color: whitesmoke;
+    }
+  </style>
+</head>
+<body>
+  <section class="main-container">
+<div class="content-container">
+  <h2>Get <span class="highlighted-word"> insights</span> that help your business grow.</h2>
+
+  <p class="first-para">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.</p>
+  <div class="stats-container">
+<div>
+ <h4> 10k+ </h4>
+ <p>COMPANIES</p>
+</div>
+<div>
+  <h4>314</h4>
+  <p>TEMPLATES</p></div>
+  <div>
+  <h4>12M+ </h4>
+  <p>QUERIES</p></div>
+ </div></div>
+ <div class="image-container">
+ </div>
+ </section>
+</body>
+</html>
