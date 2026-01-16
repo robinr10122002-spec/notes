@@ -154,21 +154,46 @@ button{
 }
 .seventh-heading{
       font-family: "Fraunces", serif;
+      /* font-size: 1rem; */
       letter-spacing: 1rem;
-       color: oklch(49.513% 0.01827 248.271);
+       color: oklch(70.014% 0.00975 359.788);
+       display: flex;
+       justify-content: center;
+       padding: 3rem;
 }
-.emilie-img{
+.emilie-img,.thomas-img,.jennie-img{
     border-radius: 50%;
+    background-size: cover;
+   
 }
-.seventh-para-1{
+.seventh-para-1,.eigth-para-1,.nineth-para-1{
      font-family: "Barlow", sans-serif;
+      color: oklch(40.725% 0.00992 254.03);
+      /* padding: 1rem; */
 }
-.seventh-down-heading{
+.seventh-down-heading,.eigth-down-heading,.nineth-down-heading{
    font-family: "Fraunces", serif; 
+   margin-top: 1rem;
 }
-.seventh-para-2{
+.seventh-para-2,.eigth-para-2,.nineth-para-2{
      font-family: "Barlow", sans-serif;
-      color: oklch(49.513% 0.01827 248.271);
+          color: oklch(0.65 0.01 0);
+          margin: 0px;
+}
+.client-details{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding: 3rem;
+padding-top: 0rem;
+margin-top: 0px;
+}
+.seventh-container,.eigth-container,.nineth-container{
+    display: grid;
+    grid-template: row;
+    justify-items: center;
+}
+.nineth-para-1{
+    padding-left: 0.5rem;
 }
 
 
