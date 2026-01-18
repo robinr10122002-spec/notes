@@ -110,40 +110,37 @@ const moreOrders = [
 
 // fourth  completed --------
 
-
 //first version:
 
-const getDishNamesByIds2 = (orderList, id) => {
-  const result =
-    orderList.find((order) => order.id == id)?.dishName ?? "unknown dish";
-  return result;
-};
+// const getDishNamesByIds2 = (orderList, id) => {
+//   const result =
+//     orderList.find((order) => order.id == id)?.dishName ?? "unknown dish";
+//   return result;
+// };
 //second version:
 
-const getDishNamesByIds4 = (orderList, ...ids) => {
-  console.log(ids);
-  const result = ids
-    .map(
-      (id) =>
-        orderList.find((order) => order.id == id)?.dishName ?? "unknown dish"
-    )
-    .join(", ");
-  return `Selected Dishes: ${result}`;
-};
+// const getDishNamesByIds4 = (orderList, ...ids) => {
+//   console.log(ids);
+//   const result = ids
+//     .map(
+//       (id) =>
+//         orderList.find((order) => order.id == id)?.dishName ?? "unknown dish"
+//     )
+//     .join(", ");
+//   return `Selected Dishes: ${result}`;
+// };
 
+// //final simplified one:
 
-//final simplified one:
+// const getDishNamesByIds = (orderList, ...ids) =>
+//    `Selected Dishes: ${ids
+//     .map(
+//       id =>
+//         orderList.find(order => order.id == id)?.dishName ?? "unknown dish"
+//     )
+//     .join(", ")}`;
 
-const getDishNamesByIds = (orderList, ...ids) => 
-   `Selected Dishes: ${ids
-    .map(
-      id =>
-        orderList.find(order => order.id == id)?.dishName ?? "unknown dish"
-    )
-    .join(", ")}`;
-
-
-console.log(getDishNamesByIds(orders, 1, 3, 5));
+// console.log(getDishNamesByIds(orders, 1, 3, 5));
 // Selected Dishes: Burger, Sushi, Pasta
 
 //console.log(getDishNamesByIds(orders, 1, 6));
@@ -155,14 +152,69 @@ console.log(getDishNamesByIds(orders, 1, 3, 5));
 //console.log(getDishNamesByIds(orders, 3, 3, 999));
 // Selected Dishes: Sushi, Sushi, Unknown Dish
 
-// const listOrders=(...orderItems)=>{
+// //5th not completed yet
+// const listOrders = (...orderItems) => {
+//   const result = orderItems.map((order) =>
+//     orders.map((order) =>order.dishName?? "unknown dishname")
+//   );
 
-//   const result=orders.map((orders)=>ord)
-//  console.log(result)
-// }
+//   return result;
+// };
 
 // console.log(listOrders(...orders));
 // // Burger (Fast Food), Pizza (Italian), Sushi (Japanese), Salad (Healthy), Pasta (Italian)
 
 // console.log(listOrders(orders[0], orders[1], orders[111]));
 // // Burger (Fast Food), Pizza (Italian), Unknown Dish (Unknown Category)
+
+//6th problem
+
+// const chefOrders = [
+//   { id: 1, chef: "John Doe", dishName: "Burger", ratings: [5, 4, 5] },
+//   { id: 2, chef: "John Doe", dishName: "Fries", ratings: [4, 4] },
+//   { id: 3, chef: "Jane Smith", dishName: "Pizza", ratings: [4, 3, 5] },
+//   { id: 4, chef: "Jane Smith", dishName: "Gelato", ratings: [5, 5, 4, 4] },
+//   { id: 5, chef: "Tom Brown", dishName: "Sushi", ratings: [5, 5, 4] },
+// ];
+
+// const getTotalRatingsForChefs = (orderList) => {
+//   // const chefName = orderList.filter((order) => order.chef == "John Doe")
+//   // .map((order) => order.ratings.length)
+//   //   .reduce((acc, rating) => acc + rating);
+
+//   // return chefName;
+//   const result=orderList.map((orders)=>`${orders.chef}: ${orders.ratings.length}`)
+//   return result;
+
+// };
+
+// console.log(getTotalRatingsForChefs(chefOrders));
+// // { "John Doe": 5, "Jane Smith": 7, "Tom Brown": 3 }
+
+const orderA = {
+  dish: { name: "Burger", category: "Fast Food" },
+  quantity: 2,
+  price: 5,
+};
+const orderB = { dish: { name: "Pizza" }, quantity: 1, price: 8 }; // category missing
+const orderC = { quantity: 0, price: 0 }; // 0 values are valid
+const orderD = { dish: null, quantity: 3, price: null }; // dish missing, price null
+
+const getOrderLine = (order) => {
+  return `${order?.dish?.name ?? "unknown dish"} (${
+    order?.dish?.category ?? "unknown category"
+  }) x${order?.quantity ?? "0"}
+  $${order?.price ?? "0"}`;
+};
+
+console.log(getOrderLine(orderA));
+console.log(getOrderLine(orderB));
+console.log(getOrderLine(orderC));
+console.log(getOrderLine(orderD));
+console.log(getOrderLine(undefined));
+
+// Burger (Fast Food) x2 $5
+// Pizza (Unknown Category) x1 $8
+// Unknown Dish (Unknown Category) x0 $0
+// Unknown Dish (Unknown Category) x3 $0
+// Unknown Dish (Unknown Category) x0 $0
