@@ -131,7 +131,7 @@ const moreOrders = [
 
 // //final simplified one:
 
-// const getDishNamesByIds = (orderList, ...ids) =>
+// const g//etDishNamesByIds = (orderList, ...ids) =>
 //    `Selected Dishes: ${ids
 //     .map(
 //       id =>
@@ -163,7 +163,7 @@ const moreOrders = [
 // console.log(listOrders(orders[0], orders[1], orders[111]));
 // // Burger (Fast Food), Pizza (Italian), Unknown Dish (Unknown Category)
 
-//------------------6th problem  ------------------------------------------------------------------------------------
+//------------------6th problem completed ------------------------------------------------------------------------------------
 
 const chefOrders = [
   { id: 1, chef: "John Doe", dishName: "Burger", ratings: [5, 4, 5] },
@@ -174,15 +174,13 @@ const chefOrders = [
 ];
 
 const getTotalRatingsForChefs = (orderList) => {
-
-  const result=orderList.map((orders)=>`${orders.chef}: ${orders.ratings.length}`)
-  return result;
+return orderList.reduce((acc,curr)=>{acc[curr.chef]=acc[curr.chef]?acc[curr.chef]+curr.ratings.length:curr.ratings.length;return acc},{})
 };
 
 console.log(getTotalRatingsForChefs(chefOrders));
 //{ "John Doe": 5, "Jane Smith": 7, "Tom Brown": 3 }
 
-// ---------------7th-task-completed------------------------------------------------------------------------------------
+//---------------7th-task-completed------------------------------------------------------------------------------------
 
 // const orderA = {
 //   dish: { name: "Burger", category: "Fast Food" },
@@ -196,8 +194,7 @@ console.log(getTotalRatingsForChefs(chefOrders));
 // const getOrderLine = (order) => {
 //   return `${order?.dish?.name ?? "Unknown Dish"} (${
 //     order?.dish?.category ?? "Unknown Category"
-//   }) x${order?.quantity ?? "0"}
-//   $${order?.price ?? "0"}`;
+//   }) x${order?.quantity ?? 0} $${order?.price ?? "0"}`;
 // };
 
 // console.log(getOrderLine(orderA));
@@ -212,7 +209,6 @@ console.log(getTotalRatingsForChefs(chefOrders));
 // Unknown Dish (Unknown Category) x3 $0
 // Unknown Dish (Unknown Category) x0 $0
 
-
 //8th-task-in-assessment--------------------------------------------------------------------------------------------
 
 // const receipts = [
@@ -223,17 +219,16 @@ console.log(getTotalRatingsForChefs(chefOrders));
 // ];
 
 // const formatReceipt = (id, defaultTip = 0) => {
-// const gettingId=receipts.find((ids)=>ids.id==id)
-// return gettingId?`Receipt #${gettingId.id}: ${gettingId.customer??"Guest"} | Tip: $${gettingId.tip??defaultTip}`:"Receipt not found."
+// const receipt=receipts.find((ids)=>ids.id==id)
+// return receipt?`Receipt #${receipt.id}: ${receipt.customer??"Guest"} | Tip: $${receipt.tip??defaultTip}`:"Receipt not found."
 
-  
-//   // const gettingId = receipts.find((ids) => ids.id === id);
-//   // return gettingId
-//   //   ? `Receipt #${gettingId.id} ${gettingId.customer ?? "guest"} | Tip: ${
-//   //       gettingId.tip ?? defaultTip
-//   //     }`
-//   //   : "receipt not found";
-// }
+// const gettingId = receipts.find((ids) => ids.id === id);
+// return gettingId
+//   ? `Receipt #${gettingId.id} ${gettingId.customer ?? "guest"} | Tip: ${
+//       gettingId.tip ?? defaultTip
+//     }`
+//   : "receipt not found";
+//}
 
 // console.log(formatReceipt(1));
 // console.log(formatReceipt(2));
