@@ -20,7 +20,6 @@ li,a{
 margin: 0px;
 align-items: center;
 padding-top: 38px;
-
 }
  
 .first-side-heading{
@@ -28,7 +27,7 @@ padding-top: 38px;
     justify-content: space-between;
     padding: 0rem 1rem;
     font-family: sans-serif;
-        background-color: oklch(0.76 0.13 240.49);
+        background-color: oklch(76.27% 0.14248 235.19);
       
     color: white;
    
@@ -168,8 +167,9 @@ button{
 }
 .seventh-para-1,.eigth-para-1,.nineth-para-1{
      font-family: "Barlow", sans-serif;
-      color: oklch(40.725% 0.00992 254.03);
+      color: oklch(23.801% 0.00489 248.164);
       /* padding: 1rem; */
+      letter-spacing: 1px;
 }
 .seventh-down-heading,.eigth-down-heading,.nineth-down-heading{
    font-family: "Fraunces", serif; 
@@ -195,12 +195,18 @@ margin-top: 0px;
 .nineth-para-1{
     padding-left: 0.5rem;
 }
-.milk-bottle-img{
-    height: 50rem;
-    width: 50%;
+.milk-bottle-img,.orange-img,.cone-img,.sugarcube-img{
+    height: 25rem;
+    width: 21.49rem;
     object-fit: cover;
+    margin: 0;
 }
-
+.all-images{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr  ;
+    object-fit: cover;
+    
+}
 
 
 

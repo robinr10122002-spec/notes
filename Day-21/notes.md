@@ -1,0 +1,60 @@
+- ## Javascript:
+- founder of javascript is Brendan Eich in 1995.
+-
+- the first version is es1 in 1997 and es2 in 1998.
+- he took 10 days to create the javascript.
+- created by Netscape in 1995.
+- originally called LiveWire then LiveScript.
+- IE has rendering engine is jscript.
+- NETSCAPE has rendering engine is livescript.
+- ECMAScript is the original name of javascipt.
+- both Netscape and IE are slightly different but most it works like same.
+- Tc39 committee handles javascript.
+- Browser engineers develops the new features and he will implement the features.
+- ES2015 means ecma script 2015 version. so many features came in 2016
+  - for example-destructuring,spread operator,arrow function,let,const,etc.
+- any new features came in ecma means we can see it in github---tc39 github or tc39/proposal- in github.
+- - ## stages of new features:
+- stage 0- idea-desk or straw person.
+- stage 1- proposal(describe about the feature and why we need it )
+- stage 2-security(it creates plugin) (in this condition they checks whether we need the feature or not or it affects the other features or other browsers) after completing this stage 90 percent completed.
+- stage 3- in this stage we use the new feature in BETA version browser.first it checks in the few users in browsers.
+- plugin-it likes an adaptor(old browser can also be accessable the new features).so plugin is used.
+- Babel is the plugin helps to use the code works in old browsers.it converts and it helps to work in old browsers.
+- ## Hoisting:
+- javascript is also a compiler language.
+- JIT- just in time- is the compiler here.
+- ## 2 phases of JIT
+-     1.compilation.(in this stage it checks only the declaration part)
+-     2.execution.(in this stage only it gives the value for the declaration part)
+- in var - we can get undefined.
+- but in let and const -we get the error because it works strictly like we cant give any value in the compile phase.
+- TDZ(TEMPORAL DEAD ZONE)-this is the zone above the declaration part it will not works due to no declaration for example var a;
+- the variable inside the function gets the more preference.(shadowing)
+- function declaration gets hoisted.
+- function expression gets hoisted.
+- ## -Call back function:
+- when function takes function as an argument is said to be a callback function.
+- TYPES OF CALL BACK FUNCTION:
+- synchronous and asynchronous.
+- synchronous- it doesnt have any time. eg:map function.
+- asynchronous-it involves time. eg:timeinterval.
+- **-Thread-** runs where the process is.
+- javascript is a single threaded and asynchronous one.
+- concurrently doing the task(concurrently means one task is completed and do the another one.)
+- **- Process-** is currently which is running.
+- ## -STACK:
+- first in last out or last in first out.
+- ## - QUEUE:
+- first in first out or last in last out.
+- **-JS ENGINE ONLY WORKS IN CALL STACK PLACE.-**
+- WEB API only waits.
+- four phases-call stack,web apis,callback queue,event loop.
+- event loop check the call stack is empty and the callback queue loop the output into the call stack.
+- setTimeout is not the part of javascript and it is the part of the browser and it is the part of webapi.
+- native code is the browsers code.
+- it takes time means it will be the part of WebApi.
+- it does not takes time means it will be the part of call stack.
+- event looping helps to push the call back queue when the call stack gets empty.
+- ## -Object-methods:
+- object.keys(student), object.values(student) and object.entries(student)
