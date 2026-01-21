@@ -11,16 +11,18 @@
 - both Netscape and IE are slightly different but most it works like same.
 - Tc39 committee handles javascript.
 - Browser engineers develops the new features and he will implement the features.
-- ES2015 means ecma script 2015 version. so many features came in 2016
+- ES2015 means ecma script 2015 version. so many features came in 2015
   - for example-destructuring,spread operator,arrow function,let,const,etc.
 - any new features came in ecma means we can see it in github---tc39 github or tc39/proposal- in github.
 - - ## stages of new features:
 - stage 0- idea-desk or straw person.
-- stage 1- proposal(describe about the feature and why we need it )
+- stage 1- proposal(describe about the feature and why we need it,it is like documentation )
 - stage 2-security(it creates plugin) (in this condition they checks whether we need the feature or not or it affects the other features or other browsers) after completing this stage 90 percent completed.
-- stage 3- in this stage we use the new feature in BETA version browser.first it checks in the few users in browsers.
+- stage 3-(boarding) in this stage we use the new feature in BETA version browser.first it checks in the few users in browsers.
 - plugin-it likes an adaptor(old browser can also be accessable the new features).so plugin is used.
 - Babel is the plugin helps to use the code works in old browsers.it converts and it helps to work in old browsers.
+- stage-4-(landing in js)-accepted to ecma script.
+
 - ## Hoisting:
 - javascript is also a compiler language.
 - JIT- just in time- is the compiler here.
@@ -35,13 +37,17 @@
 - function expression gets hoisted.
 - ## -Call back function:
 - when function takes function as an argument is said to be a callback function.
+-
 - TYPES OF CALL BACK FUNCTION:
+-
 - synchronous and asynchronous.
 - synchronous- it doesnt have any time. eg:map function.
 - asynchronous-it involves time. eg:timeinterval.
+-
 - **-Thread-** runs where the process is.
 - javascript is a single threaded and asynchronous one.
 - concurrently doing the task(concurrently means one task is completed and do the another one.)
+-
 - **- Process-** is currently which is running.
 - ## -STACK:
 - first in last out or last in first out.
@@ -50,11 +56,68 @@
 - **-JS ENGINE ONLY WORKS IN CALL STACK PLACE.-**
 - WEB API only waits.
 - four phases-call stack,web apis,callback queue,event loop.
+-
 - event loop check the call stack is empty and the callback queue loop the output into the call stack.
+-
 - setTimeout is not the part of javascript and it is the part of the browser and it is the part of webapi.
+-
 - native code is the browsers code.
+-
 - it takes time means it will be the part of WebApi.
 - it does not takes time means it will be the part of call stack.
 - event looping helps to push the call back queue when the call stack gets empty.
 - ## -Object-methods:
 - object.keys(student), object.values(student) and object.entries(student)
+- ## Promise:
+- three states of promise- 1.Pending, 2.Fullfilled, 3.Rejected.
+- before it is resolved it is in pending.
+- promise is also a scynchronous so it also wait in webapi.
+- asynchronous are setTimeout,setTimeout and event listeners. these all are wait in webapi.
+- ## Promise methods:
+- 1. then
+- 2. catch
+- 3. finally.
+- these three return type is a promise.
+  All output first enter into the call stack phase whether it is synchronous or not and it is synchronous it will not wait in webapi and it is asynchronous it will wait in webapi and then it goes to the callback queue and the use of event-loop it push the synchronous data into the final callstack,when the call stack gets empty only the asynchronous finally get enter into the call stack.
+
+- when promise and setTimeout will comes in queue means promise will first enter into the call stack .
+- here PROMISE is said to be a **- micro-task-queue -**.
+- ## - JSON STRINGIFY:
+- JSON return string (it looks like object but it is a string)
+- object has functions but in json doesnt have functions and undefined.
+- json allows null value also.
+- ## - time-complexity:
+- o(n)-is single loop.(single loop runs one time but in nested loop runs in squares, nested loop takes more time compare to the single loop)
+- 0(n square 2)- nested loop
+- json acts as a medium of front-end and back-end.
+- for understanding the code it will be the json code
+- html is the latest version of xml.
+- basically frontend and backend understand json code and xml code.
+- difference between xml and json is the code weight and it has more lines.
+- all uses json codes.
+- json return string. all programming languages has string.
+- so json gets priority.
+- while sending json data from the frontend to the backend. we need to send the json data as well as json method like example: data is some username like that and the method is CRUD methods**-(post,get,put,delete)-**
+- using multiple backends is said to be **-micro-service-architecture**
+- the opposite to the micro-service is**- monolith-**(monolith means doing one backend)-\*\*
+- ## -ADVANTAGE OF JSON:
+- independent to the front-end and back-end.
+- independent to the platform or reuse.(android,linux,windows all we can use the same backend in this frontend)
+- we can use multiple backend and the frontend (micro-service-architecture)
+  -API - is the link that has the data.(important).
+  **-fetch-**- is used to get the data from the api.
+  fetch always return **promise.**
+  - ## syntax of fetch:
+  - fetch("API link").then((response)=>response.json())
+  - the link present in the fetch is said to be **-"REST Endpoint or REST API"-**
+  - REST- rest follows the crud rules.
+  - json use to convert the coming json(in 111 line) data to the array or objects.
+  -**- promise.all,promise.any,promise.race,promise.allSettled-**
+  - promise.all-->means all promises comes in a single array or single object.
+  - it will comes in the order what we have given in the array like[p1,p2,p3]
+- promise.race-->the first resolved one will be printed and the others will get rejected.
+- promise.any--->it checks any one will resolves first and then it will be printed and others get rejected.
+- promise.allSettled--->it always return array of objects.if one gets rejected it doesnt get error it saves like **_reason:rejected_** inside the array of objects.
+- 
+- 
+

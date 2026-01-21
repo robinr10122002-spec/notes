@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //........task-1............................................................................................
+      // fetch(
+      //   "https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital",
+      // ).then((response)=>response.json())
+      // .then((data)=>(data))
+      // .then((name)=>console.log(name.map((common)=>common?.name?.common??"Country name is not present")))
+
+      //.............task-2......................................................................................
+      //   fetch(
+      //     "https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital",
+      //   )
+      //     .then((response) => response.json())
+      //     .then((data) => data)
+      //     .then((result) =>
+      //       result
+      //         .filter((res) => res.population >= 1_00_00_000)
+      //         .toSorted((countryA,countryB) => countryB.population - countryA.population)
+      //         .map((ans) => ans.name.common),
+      //     )
+      //     .then((total) => console.log(total));
+
+      fetch(
+        "https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital",
+      )
+        .then((response) => response.json())
+        .then((data) => data)
+        .then((result) =>
+          result
+            .filter((res) => res.population >= 1_00_00_000)
+            .map(
+              (ans) =>
+                console.log`${ans[0]}${ans.name.common}:${ans.population}`,
+            ),
+        );
+    </script>
+  </body>
+</html>
