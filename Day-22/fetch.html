@@ -7,14 +7,14 @@
   </head>
   <body>
     <script>
-      //........task-1............................................................................................
+      //.........................................task-1-completed............................................................................................
       // fetch(
       //   "https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital",
       // ).then((response)=>response.json())
       // .then((data)=>(data))
       // .then((name)=>console.log(name.map((common)=>common?.name?.common??"Country name is not present")))
 
-      //.............task-2......................................................................................
+      //............................................task-2-completed......................................................................................
       //   fetch(
       //     "https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital",
       //   )
@@ -28,6 +28,24 @@
       //     )
       //     .then((total) => console.log(total));
 
+      //.........................................................task-3-completed..............................................................................................................................
+      //Print countries with a population of more than 10,000,000.
+      // fetch(
+      //   "https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital",
+      // )
+      //   .then((response) => response.json())
+      //   .then((data) => data)
+      //   .then((result) =>
+      //     result
+      //       .filter((res) => res.population >= 1_00_00_000)
+      //       .map(
+      //         (ans,ind) =>
+      //           console.log(`${ind}. ${ans.name.common}: ${ans.population}`),
+      //       ),
+      //   );
+      //................................................task-4-completed......................................................................................
+      //            Get the top 10 most populated countries in descending order
+
       fetch(
         "https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital",
       )
@@ -36,11 +54,21 @@
         .then((result) =>
           result
             .filter((res) => res.population >= 1_00_00_000)
-            .map(
-              (ans) =>
-                console.log`${ans[0]}${ans.name.common}:${ans.population}`,
+            .toSorted(
+              (countryA, countryB) => countryB.population - countryA.population,
+            )
+            .slice(0,10)
+            .map((ans, ind) =>
+              console.log(`0${ind}. ${ans.name.common}: ${ans.population}`),
             ),
         );
+
+      // 1. India - 150000000
+      // 2. China - 120000000
+      // ...
+      // //...............................................................................................................................
+      //.........................................task-5................................................................................
+      //Display the Top 10 most populated countries on the screen as a list.
     </script>
   </body>
 </html>
