@@ -182,26 +182,26 @@ console.log(getTotalRatingsForChefs(chefOrders));
 
 //---------------7th-task-completed------------------------------------------------------------------------------------
 
-// const orderA = {
-//   dish: { name: "Burger", category: "Fast Food" },
-//   quantity: 2,
-//   price: 5,
-// };
-// const orderB = { dish: { name: "Pizza" }, quantity: 1, price: 8 }; // category missing
-// const orderC = { quantity: 0, price: 0 }; // 0 values are valid
-// const orderD = { dish: null, quantity: 3, price: null }; // dish missing, price null
+const orderA = {
+  dish: { name: "Burger", category: "Fast Food" },
+  quantity: 2,
+  price: 5,
+};
+const orderB = { dish: { name: "Pizza" }, quantity: 1, price: 8 }; // category missing
+const orderC = { quantity: 0, price: 0 }; // 0 values are valid
+const orderD = { dish: null, quantity: 3, price: null }; // dish missing, price null
 
-// const getOrderLine = (order) => {
-//   return `${order?.dish?.name ?? "Unknown Dish"} (${
-//     order?.dish?.category ?? "Unknown Category"
-//   }) x${order?.quantity ?? 0} $${order?.price ?? "0"}`;
-// };
+const getOrderLine = (order) => {
+  return `${order?.dish?.name ?? "Unknown Dish"} (${
+    order?.dish?.category ?? "Unknown Category"
+  }) x${order?.quantity ?? 0} $${order?.price ?? "0"}`;
+};
 
-// console.log(getOrderLine(orderA));
-// console.log(getOrderLine(orderB));
-// console.log(getOrderLine(orderC));
-// console.log(getOrderLine(orderD));
-// console.log(getOrderLine(undefined));
+console.log(getOrderLine(orderA));
+console.log(getOrderLine(orderB));
+console.log(getOrderLine(orderC));
+console.log(getOrderLine(orderD));
+console.log(getOrderLine(undefined));
 
 // Burger (Fast Food) x2 $5
 // Pizza (Unknown Category) x1 $8

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>TodoList</p>
+    <ol class="todo-container"></ol>
+    <script>
+      async function getTodos(){
+          const res=await  fetch("https://6971d21832c6bacb12c49d62.mockapi.io/todos",{method:"GET"})
+        }
+const result=await res.json()
+    </script>
+</body>
+</html>
