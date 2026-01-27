@@ -49,8 +49,8 @@ button{
    background-size: cover;
    color: white;
     font-family: "Fraunces", serif;
-   padding-left: 370px;
-   padding-top: 100px;
+   padding-left: 461px;
+    padding-top: 130px;
    letter-spacing: 2px; 
 }
 .third-heading,.fourth-heading{
@@ -197,7 +197,7 @@ margin-top: 0px;
 }
 .milk-bottle-img,.orange-img,.cone-img,.sugarcube-img{
     height: 25rem;
-    width: 21.49rem;
+    width: 24.49rem;
     object-fit: cover;
     margin: 0;
 }
