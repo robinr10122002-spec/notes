@@ -65,7 +65,7 @@ button{
 .third-content-box,.fourth-content-box{
     padding: 5rem 7rem;
     padding-bottom: 0;
-    height: 37rem;
+    height: 39rem;
 }
 .third-para-1,.fourth-para-1{
      font-family: "Barlow", sans-serif;
@@ -82,6 +82,10 @@ button{
     margin: 0px;
     object-fit: cover;
     height: 34rem;
+   
+}
+.bottle-image img{
+    width: 100%;
 }
 .fourth-box{
     display: grid;
@@ -90,7 +94,10 @@ button{
 }
 .egg-img{
     height: 34rem;
-    width:auto;
+   
+}
+.egg-img img{
+    width: 100%;
 }
 /* .bottle-image{
      height: 37rem;
@@ -197,7 +204,7 @@ margin-top: 0px;
 }
 .milk-bottle-img,.orange-img,.cone-img,.sugarcube-img{
     height: 25rem;
-    width: 24.49rem;
+    width: 100%;
     object-fit: cover;
     margin: 0;
 }
@@ -207,12 +214,36 @@ margin-top: 0px;
     object-fit: cover;
     
 }
+footer h1 {
+    font-size: 2.3rem;
+    color: teal;
+    padding-left: 43rem;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    margin: 0;
+   
+}
+footer{
+    background-color: #88e3e3;
+}
+.footer-links {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    padding-bottom: 3rem;
+}
+footer li a{
+    color: teal;
+}
 
 
-
-
-
-
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
 
 
 
