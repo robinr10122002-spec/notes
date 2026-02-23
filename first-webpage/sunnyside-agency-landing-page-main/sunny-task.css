@@ -44,15 +44,19 @@ button{
     font-size: 4rem;
    margin: 0px;
    background: url(./images/desktop/image-header.jpg);
-   height: 700px;
+   height: 750px;
    background-repeat: no-repeat;
    background-size: cover;
    color: white;
     font-family: "Fraunces", serif;
    padding-left: 461px;
-    padding-top: 130px;
+    /* padding-top: 130px; */
    letter-spacing: 2px; 
+   
 }
+/* .arrow-img{
+    padding-top: 15rem;
+} */
 .third-heading,.fourth-heading{
      font-family: "Fraunces", serif;
      font-size: 3rem;
