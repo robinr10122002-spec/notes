@@ -24,8 +24,11 @@
 
 # After the 🔑
 message = "    🚨🔍📱🔑secret_code✌️".strip().upper()
+print(message)
 
 print(message[4:])
+index = message.find("🔑")
+print(message[index + 1 :])
 # Clue: find
 
 # Output

@@ -6,24 +6,24 @@
 captain = input("Please tell me the captain name: ").capitalize()
 print(captain)
 
-captain_height = input("Please tell me the captain height: ")
+captain_height = input(f"Please tell me the {captain} height: ")
 mod_captain_height = float(captain_height)
 print(mod_captain_height)
 
 vice_captain = input("Please tell me the vice_captain name: ").capitalize()
 print(vice_captain)
 
-vice_captain_height = input("Please tell me the vice_captain height: ")
+vice_captain_height = input(f"Please tell me the {vice_captain} height: ")
 mod_vice_captain_height = float(vice_captain_height)
 print(mod_vice_captain_height)
 
 difference = abs(mod_captain_height - mod_vice_captain_height)
 
 if mod_captain_height > mod_vice_captain_height:
-    print(f"{captain} is taller than {vice_captain} than {difference}")
+    print(f"{captain} is taller than {vice_captain} by {difference}")
 
 elif mod_captain_height < mod_vice_captain_height:
-    print(f"{vice_captain} is taller than {captain} than {difference}")
+    print(f"{vice_captain} is taller than {captain} by {difference}")
 
 elif mod_captain_height == mod_vice_captain_height:
     print(f"{vice_captain} and {captain} has same height")
