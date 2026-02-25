@@ -44,7 +44,7 @@ for book in books:
     if(book["rating"]>= 4.7):
         highest_rating.append(book["title"])
        
-print(f"Highest rated books are: {highest_rating[0]}, {highest_rating[1]}, {highest_rating[2]}")
+print(f"Highest rated books are: {", ".join(highest_rating[:-1])} and {highest_rating[-1]}")
      
 
 # ### Expected Output
