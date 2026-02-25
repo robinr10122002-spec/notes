@@ -10,4 +10,5 @@
 - class name should be in PascalCase.for eg: HelloWorld.
 - Function written in a class is said to be a method.
 - when we "instantiate-sudden"or create the object init method will be called.
+- @static method---> it is also called as decorators or a Higher Order Function
 
