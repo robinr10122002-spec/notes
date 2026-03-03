@@ -383,3 +383,94 @@ group by director;
 ```
 
 ![alt text](image-9.png)
+
+### Exercise 13 — Tasks
+- Add the studio's new production, Toy Story 4 to the list of movies (you can use any director)
+```sql
+- insert into movies 
+  values(4,'Toy Story','John Lasseter',2000,90)
+```
+- Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, and made 340 million domestically and 270 million internationally. Add the record to the BoxOffice table.
+```sql
+- insert into boxoffice values(4,8.7,340000000,270000000)
+```
+![alt text](image-10.png)
+
+### Exercise 14 — Tasks:
+- The director for A Bug's Life is incorrect, it was actually directed by John Lasseter 
+```sql
+update movies
+ set movies.director='John Lasseter'
+ where id=2;
+ ```
+ - The year that Toy Story 2 was released is incorrect, it was actually released in 1999
+  ```sql
+  update movies
+ set year=1999
+ where id=3
+  ```
+- Both the title and director for Toy Story 8 is incorrect! The title should be "Toy Story 3" and it was directed by Lee Unkrich
+  ```sql
+  update movies
+  set title='Toy Story 3',director='Lee Unkrich'
+  where id=11
+  ```
+  ![alt text](image-11.png)
+
+### Exercise 15 — Tasks:
+- This database is getting too big, lets remove all movies that were released before 2005.
+```sql
+  delete from movies
+where year<2005;
+```
+- Andrew Stanton has also left the studio, so please remove all movies directed by him.
+  ```sql
+  delete from movies
+  where director="Andrew Stanton"
+  ```
+  ![alt text](image-12.png)
+
+### Exercise 16 — Tasks:
+- Create a new table named Database with the following columns:
+-  Name A string (text) describing the name of the database
+-  Version A number (floating point) of the latest version of this database
+-  Download_count An integer count of the number of times this database was downloaded
+- This table has no constraints. 
+```sql
+  CREATE TABLE Database(
+    Name text,
+    Version float,
+    Download_count INTEGER 
+);
+```
+![alt text](image-13.png)
+
+### Exercise 17 — Tasks:
+- Add a column named Aspect_ratio with a FLOAT data type to store the aspect-ratio each movie was released in. 
+  ```sql
+  alter table movies
+   add column Aspect_ratio float default 10;
+
+- Add another column named Language with a TEXT data type to store the language that the movie was released in. Ensure that the default for this language is English.
+  ```sql
+  alter table movies
+  add column Language TEXT default 'English'
+  ```
+  ![alt text](image-14.png)
+
+
+### Exercise 18 — Tasks:
+- We've sadly reached the end of our lessons, lets clean up by removing the Movies table 
+  ```sql
+    DROP TABLE IF EXISTS movies;
+- And drop the BoxOffice table as well
+  ```sql
+  DROP TABLE IF EXISTS Boxoffice;
+  ```
+  ![alt text](image-15.png)
+
+
+
+
+
+
